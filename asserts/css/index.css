@@ -1,9 +1,9 @@
 body{
-    background-image: url(/pages/assets/images/vecteezy_earth-line-sphere-connect-earth-particle-earth-in-space_1622124.gif);
+    background-image: url(/asserts/photos/vecteezy_plexus-artificial-intelligence-background_12658018.gif);
     background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-size: cover;
-          
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 li{
     color: whitesmoke;
@@ -27,9 +27,9 @@ h2{
     justify-content: center;
     align-items: center;
     margin: 0;
-    
-   
-    
+
+
+
 }
 a{
     text-decoration: none;
@@ -39,20 +39,20 @@ a{
     color: rgb(112, 200, 52);
 }
 .style{
-   
-    
+
+
     display: flex;
-    
+
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .center{
     display: flex ;
     justify-content: center;
-    
+
 }
 footer {
-  
+
     display: flex;
     align-items: center;
     backdrop-filter: blur(5px);
@@ -61,8 +61,8 @@ footer {
     backdrop-filter: blur(5px);
     padding: 5px;
     color: antiquewhite;
-  }
-  h2{
+}
+h2{
     font-family: "Ubuntu", sans-serif;
-  }
-  
+}
+

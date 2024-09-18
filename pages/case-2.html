@@ -1,61 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <title>Case-2</title>
-    <link rel="stylesheet" href="../asserts/css/case-2.css">
+    <style>
+        body {
+            margin: 0;
+        }
 
+
+        header {
+            position: relative;
+            height: 80px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            background-color: white;
+        }
+
+        .logo {
+            position: absolute;
+            height: 50px;
+            top: 20%;
+            left: 2%;
+        }
+
+        .navigation {
+            display: flex;
+            column-gap: 20px;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            padding: 0;
+        }
+
+        .navigation li {
+            list-style: none;
+            text-align: center;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        main {
+            position: relative;
+            display: flex;
+            height: fit-content;
+            background-color: rgb(55, 2, 104);
+        }
+
+        .side-bar {
+            height: 100%;
+            width: 20%;
+            background-color: rgb(133, 83, 18);
+        }
+
+        .side-navigation {
+            position: absolute;
+            top: 5%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .side-navigation li {
+            list-style: none;
+            text-align: left;
+        }
+
+        .side-navigation li a {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .content {
+            position: relative;
+            height: fit-content;
+            min-height: 85vh;
+            width: 80%;
+            margin-top: 5px;
+            padding: 5px 30px;
+            background-color: white;
+        }
+
+        .image-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .content-image {
+            width: 33.3%;
+            border: 1px solid black;
+        }
+
+        .content p {
+            font-size: 1rem;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+
+        footer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(117, 117, 117);
+        }
+
+        .footer-text {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-<header class="header">
-    <div>
-        <img src="../asserts/photos/ijse.png" height="102" width="350"/></div>
-    <nav class="navigation">
-        <ul>
+<header>
+    <img class="logo" src="images/ijse.png" alt="ijse-logo">
+    <nav>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contacts</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#">About us</a></li>
         </ul>
     </nav>
 </header>
-<main style="display: flex;flex-direction: row;width: 100%;height: 80em; background-color: blue;padding: 0px;position: relative;padding-left: 15px">
-    <div style="width: 17%;height:100%; background-color: blue;position: relative;right: 0px;display: flex;flex-direction: row;justify-content: center;color: white">
-        <nav style="align-items: flex-start">
-            <a href="#" style="text-decoration: none;color: white;">Home</a>
-            <br>
-            <a href="#" style="text-decoration: none;color: white">Services</a>
-            <br>
-            <a href="#" style="text-decoration: none;color: white">Contacts</a>
-            <br>
-            <a href="#" style="text-decoration: none;color: white">About Us</a>
+<main>
+    <section class="side-bar">
+        <nav>
+            <ul class="side-navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
         </nav>
-    </div>
-    <div style="display: flex;flex-direction: column; position: relative;top: 10px;background-color: white;width: 83%;height: 95%;gap: 15px">
-        <div style="display: flex;flex-direction: row;position: relative;left: 10px;top: 10px;margin: 0px">
-            <div style="width: 400px;height: 300px;border: #f05023 solid 3px;"></div>
-            <div style="width: 400px;height: 300px;border: #f05023 solid 3px"></div>
-            <div style="width: 400px;height: 300px;border: #f05023 solid 3px"></div>
+    </section>
+    <section class="content">
+        <div class="image-container">
+            <img class="content-image" src="images/image.jpg" alt="image">
+            <img class="content-image" src="images/image.jpg" alt="image">
+            <img class="content-image" src="images/image.jpg" alt="image">
         </div>
-        <div style="display: flex;flex-direction: column; position: relative;left: 10px;right: 10px">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur, dolorum eos iusto labore
-                laborum, laudantium nesciunt nihil officia perspiciatis quo repellat rerum sapiente. Ea facere impedit
-                repellat sint sunt vero voluptas. Asperiores earum eos expedita facere impedit labore magni, optio
-                velit? Ab accusamus alias aliquam asperiores aut autem dicta, distinctio dolorem doloremque doloribus
-                ducimus expedita facilis ipsam laudantium magnam modi non numquam perspiciatis porro, praesentium quasi
-                repudiandae similique sint sunt temporibus ut veritatis vitae. At laboriosam perspiciatis unde. Adipisci
-                alias consequuntur debitis ipsum laborum libero, nesciunt soluta ullam voluptate voluptatum. Alias animi
-                dolor magni nobis repellendus similique. Laudantium, sint!</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque totam dolores error qui quidem explicabo
+            quos ducimus esse amet? Atque maiores officiis corrupti deserunt totam, dolores in iure voluptate facere
+            magni, hic rerum accusantium odio obcaecati delectus beatae corporis. Voluptate laboriosam, incidunt at
+            velit soluta quasi non adipisci ad neque provident ipsam ratione, pariatur in explicabo cupiditate
+            maiores labore quisquam?</p>
 
-    </div>
-
+    </section>
 </main>
-<footer class="footer">
-
-    <p style="color: white">Developed By IJSE</p>
-
+<footer>
+    <p class="footer-text">Developed By IJSE</p>
 </footer>
-</body>
-</html>
+
+
+</body></html>
