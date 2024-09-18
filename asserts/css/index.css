@@ -42,13 +42,14 @@ a{
 
 
     display: flex;
+    margin: 50px;
 
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .center{
     display: flex ;
-    justify-content: center;
+
 
 }
 footer {
@@ -64,5 +65,11 @@ footer {
 }
 h2{
     font-family: "Ubuntu", sans-serif;
+}
+.main-container{
+
+    display: flex;
+    margin: 10px 50px;
+
 }
 
